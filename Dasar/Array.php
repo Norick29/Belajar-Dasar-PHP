@@ -35,10 +35,22 @@
     // Contoh 4
     $no = [4, 8, 12, 6];
     unset($no[3]);
+    var_dump($no);
 
     // Contoh 5 
     $cok = [6, 8, 9, 7];
     var_dump(count($cok));
 
-    //belum selesai durasi terakhir di angka 1:22:08
+    // Membuat Map di php dan array dalam array
+    $baull = array(
+        "id" => "Fachrul",
+        "name" => "Norick",
+        "age" => 21,
+        "address" => array(
+            "kota" => "Bandung",
+            "negara" => "Indonesia"
+        )
+    );
+    var_dump($baull["id"]);
+    var_dump($baull["address"]["kota"]);
 ?>
